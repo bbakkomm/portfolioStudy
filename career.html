@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="menuOff">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH - Front-End Developer</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <script src="./util/utilCommon.js"></script>
+</head>
+<body>
+  <header class='global-Header'>
+    <div class="custom-sizewrap">
+        <div class='global-headerWrap'>
+        <a href="/" class="header-Icon global-hd-li">
+            <img src="./image/nlogo_dark.webp" alt="메인로고" />
+        </a>
+        <nav role="navigation" class="global-HeaderNav global-hd-li">
+            <div class="global-FlexBtnbox">
+              <div class="nav-Btnbox">
+                  <a href="#experience" class="nav-Btn WorksBtn">Works</a>
+              </div>
+              <div class="nav-Btnbox">
+                  <a href="./about.html" class="nav-Btn">About Me</a>
+              </div>
+              <div class="nav-Btnbox">
+                  <a href="./career.html" class="nav-Btn">Career Description</a>
+              </div>
+            </div>
+        </nav>
+        <nav role="navigation" class="mobile-nav off">
+            <div class="mobile-wrapper">
+                <div class="mobile-flexwrap">
+                    <a href="#experience" class='mobile-btn workBtn'>
+                    <p>Works</p>
+                    <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0_410_326)">
+                    <path d="M1.00042 6.99805C0.448134 6.99782 0.000231226 7.44534 1.04678e-07 7.99763C-0.000231017 8.54991 0.447297 8.99782 0.999582 8.99805L1.00042 6.99805ZM15.7068 8.71131C16.0975 8.32095 16.0978 7.68778 15.7074 7.29709L9.34611 0.930471C8.95574 0.539784 8.32258 0.539519 7.93189 0.929879C7.5412 1.32024 7.54094 1.95341 7.9313 2.34409L13.5858 8.00331L7.92657 13.6578C7.53588 14.0482 7.53561 14.6813 7.92597 15.072C8.31633 15.4627 8.9495 15.463 9.34019 15.0726L15.7068 8.71131ZM0.999582 8.99805L14.9996 9.00391L15.0004 7.00391L1.00042 6.99805L0.999582 8.99805Z" fill="currentcolor"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_410_326">
+                        <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+                    <a href="./about.html" class='mobile-btn'>
+                    <p>About Me</p>
+                    <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clipPath="url(#clip0_410_326)">
+                        <path d="M1.00042 6.99805C0.448134 6.99782 0.000231226 7.44534 1.04678e-07 7.99763C-0.000231017 8.54991 0.447297 8.99782 0.999582 8.99805L1.00042 6.99805ZM15.7068 8.71131C16.0975 8.32095 16.0978 7.68778 15.7074 7.29709L9.34611 0.930471C8.95574 0.539784 8.32258 0.539519 7.93189 0.929879C7.5412 1.32024 7.54094 1.95341 7.9313 2.34409L13.5858 8.00331L7.92657 13.6578C7.53588 14.0482 7.53561 14.6813 7.92597 15.072C8.31633 15.4627 8.9495 15.463 9.34019 15.0726L15.7068 8.71131ZM0.999582 8.99805L14.9996 9.00391L15.0004 7.00391L1.00042 6.99805L0.999582 8.99805Z" fill="currentcolor"></path>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_410_326">
+                        <rect width="16" height="16" fill="white"></rect>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    </a>
+                    <a href="./career.html" class='mobile-btn'>
+                    <p>Career Description</p>
+                    <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0_410_326)">
+                    <path d="M1.00042 6.99805C0.448134 6.99782 0.000231226 7.44534 1.04678e-07 7.99763C-0.000231017 8.54991 0.447297 8.99782 0.999582 8.99805L1.00042 6.99805ZM15.7068 8.71131C16.0975 8.32095 16.0978 7.68778 15.7074 7.29709L9.34611 0.930471C8.95574 0.539784 8.32258 0.539519 7.93189 0.929879C7.5412 1.32024 7.54094 1.95341 7.9313 2.34409L13.5858 8.00331L7.92657 13.6578C7.53588 14.0482 7.53561 14.6813 7.92597 15.072C8.31633 15.4627 8.9495 15.463 9.34019 15.0726L15.7068 8.71131ZM0.999582 8.99805L14.9996 9.00391L15.0004 7.00391L1.00042 6.99805L0.999582 8.99805Z" fill="currentcolor"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_410_326">
+                        <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="mobilemenu-btn off">
+            <div class="mobilemenu-btnwrap">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="header-Info global-hd-li">
+            <div class="global-FlexBtnbox">
+            <div class="nav-Btnbox">
+                <a href="#achieved" class="nav-Btn achievedBtn bright">
+                <p>Get started</p>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </g>
+                </svg>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="nav-LineBgbox">
+            <div class="nav-Line"></div>
+        </div>
+    </div>
+  </header>
+  <div id='aboutContents' class="aboutContents-container">
+    <div class="global-marginwrap">
+      <div class="aboutContents-header">
+        <div class="aboutContents-hItem hleft">
+          <strong class="aboutContents-titleTxt">About These</strong>
+          <p class="aboutContents-smallTxt">저는 학원 시절부터 웹 에이전시와 SI를 거치는 동안 크고 작은 몇몇 프로젝트에 참가했습니다. 중간에 웹 보안과 네트워크에 관심이 생겨 정보보안관제에 1년간 재직한 경험이 있으며, 현재는 프론트엔드 개발에 몸 담고 있습니다.</p>
+          <p class="aboutContents-smallTxt">Git, SVN, Jira, WordPress, BootStrap, PhotoShop, Zeplin, Figma 이외 다양한 툴들을 경험해 보았습니다. 현재까지도 기술을 숙련시키고 이해하기 위해 항상 사용하는 부분만이 아닌 사용하지 않는 주기능 이외의 것들을 사용해 보고는 합니다.</p>
+          <p class="aboutContents-smallTxt">이하 정규직/프리랜서 재직 중 참여한 프로젝트 목록입니다. 일부는 경로가 제공되지 않습니다.</p>
+        </div>
+        <div class="aboutContents-hItem hright">
+          <div class="char_iconwrap">
+            <img src="./image/char_icon.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="aboutContents-body">
+        <div class="aboutContents-bleft_box">
+          <strong class="aboutContents-bodyTit">My Career</strong>
+          <div class="aboutContents-Ulbox">
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">ThinQ App : 마이홈리포트, 생활연구소, LG 베스트 케어</p>
+              <!-- <a href="/" target="_blank" class="aboutContents-LinkBtn">/</a> -->
+              <p class="aboutContents-LiTxt">
+                -	초기 마크업 및 인터랙션 설계 및 구축.<br/>
+                -	안드로이드, 아이폰, LG폰 디바이스 반응형 구현.<br/>
+                -	로딩 속도, 반응성을 고려하여 JavaScript 최적화.<br/>
+                -	TalkBack, ScreenReader 접근성 Aria를 이용하여 반영.
+                </p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">LG Content Store</p>
+              <a href="https://kr.lgappstv.com/" target="_blank" class="aboutContents-LinkBtn">https://kr.lgappstv.com/</a>
+              <p class="aboutContents-LiTxt">
+                -	초기 마크업 및 인터랙션 유지보수.<br/>
+                -	안드로이드, 아이폰, LG폰 디바이스 반응형 유지보수.<br/>
+                -	로딩 속도, 반응성을 고려하여 JavaScript 최적화.
+              </p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">LG Seller Lounge</p>
+              <a href="https://seller.lgappstv.com/" target="_blank" class="aboutContents-LinkBtn">https://seller.lgappstv.com/</a>
+              <p class="aboutContents-LiTxt">
+                -	초기 마크업 및 인터랙션 유지보수.<br/>
+                -	안드로이드, 아이폰, LG폰 디바이스 반응형 유지보수.<br/>
+                -	로딩 속도, 반응성을 고려하여 JavaScript 최적화.<br/>
+                -	내부 직원용 데이터 추출을 위한 캘린더 다기능 구현(1일, 1주 1달, 분기, 년도, 데이터 파싱)
+              </p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">Python : 내부 직원용 자동화 프로그램</p>
+              <!-- <a href="https://bestshop.lge.co.kr/" target="_blank" class="aboutContents-LinkBtn">https://bestshop.lge.co.kr/</a> -->
+              <p class="aboutContents-LiTxt">
+                -	Python-docx를 이용하여, Word 문서 자동화 exe 제작.<br/>
+                -	Openpyxl을 이용하여, Excel 문서 자동화 exe 제작.<br/>
+                -	cv2, Opencv, pytesseract를 이용하여, OCR 기능 exe 제작.<br/>
+                -	Selenium을 이용하여, 운영 Admin 페이지 내 자동화 exe 제작.<br/>
+                -	Pillow를 이용하여, 사진 사이즈 및 파일 변환 기능 exe 제작.
+              </p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">이화수 육개장</p>
+              <a href="http://ihwasoo.com/" target="_blank" class="aboutContents-LinkBtn">http://ihwasoo.com/</a>
+              <p class="aboutContents-LiTxt">육개장과 동일한 빨강색을 주 색상으로, 기업의 강조하고자 하는 음식의 배경과 계기의 내용을 기초로 제작. 사용 고객층이 다양하지만, 주요 고객은 30, 40대로 복잡한 효과는 배제하였으며, 현재 위치한 메뉴페이지를 강조하기위해 Parallax Scrolling 효과 적용. 음식점의 특성상 제일 중요시되는 메뉴 소개와 매장의 위치들을 지도 API를 사용하여 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">김형제</p>
+              <a href="http://kimbro.co.kr/" target="_blank" class="aboutContents-LinkBtn">http://kimbro.co.kr/</a>
+              <p class="aboutContents-LiTxt">이화수 육개장과 동일하게 복잡한 효과는 배제하였고, 메인 페이지에 3개의 페이지로 나누고 vimeo를 연동시켜 기업동영상 재생. Cross-Browsing 과정 중, 아이폰의 a태그 클릭 오류 및 동영상 미재생 이슈를 Javascript의 Onclick, CSS의 :hover Selector를 적용시켜 해결.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">국제통합의과학회</p>
+              <a href="https://www.imsacademy.net/" target="_blank" class="aboutContents-LinkBtn">https://www.imsacademy.net/</a>
+              <p class="aboutContents-LiTxt">학회의 자료의 양과 종류가 많은 곳으로, 체계적으로 DB가 구성된 웹 페이지. 권한별로 진입할 수 있는 페이지가 달랐고 1~7 등급으로 나눔. 교육신청 및 논문접수 또한 가입 후, 인증된 인원에게 부여되는 권한으로 MySQL 테이블의 관계를 구성.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">여수요양병원</p>
+              <a href="http://www.newstart.co.kr/" target="_blank" class="aboutContents-LinkBtn">http://www.newstart.co.kr/</a>
+              <p class="aboutContents-LiTxt">기존의 웹페이지의 서버를 그대로 유지하여 리뉴얼된 웹페이지. 요양병원의 특성상 고객층이 많이 높은 관계로 Explorer의 사용량이 많았기 때문에, 최소한의 함수를 이용하여 Cross-Browsing 최적화 적용. 문자상담 기능은 웹 문자 발송 홈페이지와 연동하였으며, 카카오톡 상담은 실시간 톡 계정을 생성하여 웹과 연동.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">이앤이캠</p>
+              <a href="http://www.enechems.com/" target="_blank" class="aboutContents-LinkBtn">http://www.enechems.com/</a>
+              <p class="aboutContents-LiTxt">화장품 기업의 웹페이지, 기업의 홍보영상이 많아 게시판에서 유튜브를 동영상을 게시할 수 있도록 제작하고 다국어를 적용함.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">명신메디컬</p>
+              <a href="http://www.msmedi.com/" target="_blank" class="aboutContents-LinkBtn">http://www.msmedi.com/</a>
+              <p class="aboutContents-LiTxt">제품의 구성을 고객들에게 소개하기위해 다양한 각도의 사진을 이용하여, Slider 기능 구현. 유튜브를 게시할 수 있도록 제작하고 다국어 적용.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">두타기술</p>
+              <a href="http://www.duta-rnd.com/" target="_blank" class="aboutContents-LinkBtn">http://www.duta-rnd.com/</a>
+              <p class="aboutContents-LiTxt">제품의 종류가 다양하며, 구성 및 스펙에 대해 세세한 설명 반영을 위해, DB 커스터마이징. 관리자페이지에서 직접 제품의 이미지와 설명을 생성 및 수정, 삭제할 수 있도록 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">블랑호텔</p>
+              <a href="http://여수블랑호텔.kr/" target="_blank" class="aboutContents-LinkBtn">http://여수블랑호텔.kr/</a>
+              <p class="aboutContents-LiTxt">호텔 소개 웹페이지 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">대전시립노인병원</p>
+              <a href="http://www.ilovenoin.com/" target="_blank" class="aboutContents-LinkBtn">http://www.ilovenoin.com/</a>
+              <p class="aboutContents-LiTxt">병원에서의 다양한 치료 서비스의 정보를 소개하고, 캘린더를 바탕으로 관리자페이지에서 진료일정을 생성 및 수정할 수 있게 반영. 그리고 면회신청, 자원봉사신청자를 DB에 축적하고 볼 수 있도록 커스터마이징.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">유성한가족병원</p>
+              <a href="http://han.or.kr/" target="_blank" class="aboutContents-LinkBtn">http://han.or.kr/</a>
+              <p class="aboutContents-LiTxt">시립노인병원과 패밀리사이트로, 동일한 방식으로 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">대원산업</p>
+              <a href="http://daewonic.com/" target="_blank" class="aboutContents-LinkBtn">http://daewonic.com/</a>
+              <p class="aboutContents-LiTxt">기업 소개 웹페이지 제작. 다국어 적용.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">오픈앰</p>
+              <a href="http://openm.com/" target="_blank" class="aboutContents-LinkBtn">http://openm.com/</a>
+              <p class="aboutContents-LiTxt">기업 소개 웹페이지 제작. 다국어 적용.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">BMST</p>
+              <a href="http://bmst.co.kr/" target="_blank" class="aboutContents-LinkBtn">http://bmst.co.kr/</a>
+              <p class="aboutContents-LiTxt">기업 소개 웹페이지 제작. 다국어 적용.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">사이언스스타</p>
+              <a href="https://sstar.biz/" target="_blank" class="aboutContents-LinkBtn">https://sstar.biz/</a>
+              <p class="aboutContents-LiTxt">남색을 주 색상으로, 회사 소개 페이지 제작, Lottie를 통해 애니메이션 구현 및 쇼핑몰 내 기능 유지보수.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">VP 네트웍스</p>
+              <a onclick="alert('서비스 중지된 사이트입니다');" class="aboutContents-LinkBtn">https://vpnetworks.iiumns.com/</a>
+              <p class="aboutContents-LiTxt"></p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">나노스프트</p>
+              <a href="http://www.bfit.kr/" target="_blank" class="aboutContents-LinkBtn">http://www.bfit.kr/</a>
+              <p class="aboutContents-LiTxt">Wordpress 기반으로 기업 소개 웹페이지 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">BE 쇼핑몰</p>
+              <a onclick="alert('서비스 중지된 사이트입니다');" target="_blank" class="aboutContents-LinkBtn">https://be4u.co.kr/</a>
+              <p class="aboutContents-LiTxt">특허를 제품을 판매하기 위한 쇼핑몰 웹페이지 제작.</p>
+            </div>
+            <div class="aboutContents-Libox">
+              <p class="aboutContents-LiTit">위즈켐</p>
+              <a href="http://www.gluca.co.kr/" target="_blank" class="aboutContents-LinkBtn">http://www.gluca.co.kr/</a>
+              <p class="aboutContents-LiTxt">특허를 제품을 판매하기 위한 쇼핑몰 웹페이지 제작.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="aboutContents-bright_box">
+          <a href="javascript:void(0);" class="aboutContents-careerLink">
+            <p class="aboutContents-careerTxt">경력 기술서 보러가기</p>
+            <div class="about-careerLottie">
+              <lottie-player src="./lottie/right_arrow.json" background="transparent"  speed="0.5"  style="width: 45rem; height: 45rem;" loop hover></lottie-player>
+            </div>
+          </a>
+        </div> -->
+      </div>
+    </div>
+    <div class="nav-Line"></div>
+    <div class="bg_back"></div>
+  </div>
+  <footer id='footer' class='footer-container'>
+    <div class="global-marginwrap">
+        <div class="footer-wrapper">
+            <p class='footerTxt'>Made with by Sunghun.</p>
+            <p class='footerTxt'>© 2023 SUNGHUN. All rights reserved.</p>
+        </div>
+    </div>
+    <button id='scroll-btn' onclick="scrollToTop()" class="none">
+        <svg width="100%" height="100%" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_533_298)">
+                <path d="M13.3686 27.6926C13.3685 28.5939 14.0992 29.3245 15.0004 29.3245C15.9016 29.3245 16.6322 28.5939 16.6322 27.6926L13.3686 27.6926ZM16.1543 1.15349C15.517 0.51622 14.4838 0.516203 13.8465 1.15349L3.46163 11.5384C2.82436 12.1756 2.82436 13.2089 3.46163 13.8461C4.0989 14.4834 5.13211 14.4834 5.76938 13.8461L15.0004 4.61512L24.2314 13.8461C24.8687 14.4834 25.9019 14.4834 26.5391 13.8461C27.1764 13.2088 27.1764 12.1757 26.5391 11.5384L16.1543 1.15349ZM16.6322 27.6926L16.6322 2.30737L13.3686 2.30736L13.3686 27.6926L16.6322 27.6926Z" fill="currentcolor"></path>
+            </g>
+        </svg>
+    </button>
+</footer>
+<button class="mode-transfer">
+  <div class="mode-item mode-left">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <circle cx="12" cy="12" r="6" stroke-width="1.5"></circle>
+              <path d="M12 2V3" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M12 21V22" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M22 12L21 12" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M3 12L2 12" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M19.0708 4.92969L18.678 5.32252" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M5.32178 18.6777L4.92894 19.0706" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M19.0708 19.0703L18.678 18.6775" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M5.32178 5.32227L4.92894 4.92943" stroke-width="1.5" stroke-linecap="round"></path>
+          </g>
+      </svg>
+  </div>
+  <div class="mode-item mode-right">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                </g>
+            </svg>
+  </div>
+  <div class="mode-select"></div>
+</button>
+</body>
+</html>

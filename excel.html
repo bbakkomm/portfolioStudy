@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    'use strict';
+    window.addEventListener('load', () => {
+      let area1 = document.querySelector('#area1');
+      let area2 = document.querySelector('#area2');
+      let tableCore = document.querySelector('table');
+      let [headOj, ...contentsOj] = tableCore.querySelectorAll('tr');
+      let headTit = headOj.querySelectorAll('td');
+      let tempStr1 = '';
+      let tempStr2 = '';
+
+      function changeFunc1() {
+        tempStr1 += '[\n';
+        contentsOj.forEach((item, idx) => {
+          tempStr1 += ' {';
+          item.querySelectorAll('td').forEach((tdItem, tdIdx) => {
+            tempStr1 += `"${headTit[tdIdx].innerText}": "${tdItem.innerText}"`;
+            (item.querySelectorAll('td').length-1 !== tdIdx) ? tempStr1 += ', ' : tempStr1 += '';
+          });
+          tempStr1 += '}';
+          (contentsOj.length-1 !== idx) ? tempStr1 += ',\n' : tempStr1 += '\n';
+        });
+        tempStr1 += ']';
+
+        area1.innerHTML = tempStr1;
+      }
+
+      function changeFunc2() {
+        tempStr2 += '[\n';
+        contentsOj.forEach((item, idx) => {
+          tempStr2 += ' {\n';
+          item.querySelectorAll('td').forEach((tdItem, tdIdx) => {
+            tempStr2 += `   "${headTit[tdIdx].innerText}": "${tdItem.innerText}"`;
+            (item.querySelectorAll('td').length-1 !== tdIdx) ? tempStr2 += ',\n' : tempStr2 += '';
+          });
+          tempStr2 += '\n }';
+          (contentsOj.length-1 !== idx) ? tempStr2 += ',\n' : tempStr2 += '\n';
+        });
+        tempStr2 += ']';
+
+        area2.innerHTML = tempStr2;
+      }
+      
+      changeFunc1();
+      changeFunc2();
+    });
+  </script>
+  <style>
+    .flex__Container { display: flex; flex-wrap: nowrap; margin-top: 50px;}
+    .flex__Item { width: 50%;}
+    textarea { padding: 10px;}
+  </style>
+  <!-- 테이블 삽입 =s -->
+  <table border=0 cellpadding=0 cellspacing=0 width=288>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 width=72 style='height:16.5pt;width:54pt'>id</td>
+     <td class=xl151572 width=72 style='width:54pt'>name</td>
+     <td class=xl151572 width=72 style='width:54pt'>kr</td>
+     <td class=xl151572 width=72 style='width:54pt'>en</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>1</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>2</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>3</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>4</td>
+     <td class=xl151572>button</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>5</td>
+     <td class=xl151572>buttonsd</td>
+     <td class=xl151572></td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+    <tr height=22 style='height:16.5pt'>
+     <td height=22 class=xl151572 align=right style='height:16.5pt'>6</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>texttt</td>
+     <td class=xl151572>buttonsd</td>
+    </tr>
+   </table>
+   <!-- 테이블 삽입 =e -->
+
+   <div class="flex__Container">
+    <div class="flex__Item">
+      <textarea name="" id="area1" cols="100" rows="30"></textarea>
+      <p class="tempText1"></p>
+    </div>
+    <div class="flex__Item">
+      <textarea name="" id="area2" cols="100" rows="30"></textarea>
+      <p class="tempText2"></p>
+    </div>
+   </div>
+</body>
+</html>
