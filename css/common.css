@@ -993,7 +993,7 @@ html.white .mode-item.mode-right svg path {
 }
 html.dark .mode-item.mode-right svg path {
   stroke: #1a1a1a;
-  fill: #1a1a1a;
+  fill: #1a1a1a; 
 }
 html.white .mode-select {
   transform: translate(0.1rem, -50%);
