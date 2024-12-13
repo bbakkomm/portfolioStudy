@@ -246,7 +246,14 @@
 
 @media (max-width: 767px) { 
   .header-Info {
-    display: none;
+    position: relative;
+    right: 45px;
+  }
+  .nav-Btn {
+    font-size: 1.4rem;
+  }
+  .nav-Btn.bright svg {
+    max-width: 2rem;
   }
   .global-Header {
     padding: 0 1.5rem;
@@ -469,5 +476,11 @@
   }
   .bg_back {
     display: none!important;
+  }
+  html.white .skilled { 
+    font-size: 1.5rem;
+  }
+  html.dark .skilled { 
+    font-size: 1.5rem;
   }
 }

@@ -65,17 +65,17 @@ window.addEventListener('load', () => {
     if (isNaN(hsearchParams)) {
       workBtn.href = '#experience';
       mobileworkBtn.href = '#experience';
-      achievedBtn.href = '#achieved';
+      // achievedBtn.href = '#achieved';
 
       if (document.querySelectorAll('.aboutContents-container').length > 0) {
         workBtn.href = '/';
         mobileworkBtn.href = '/';
-        achievedBtn.href = '/';
+        // achievedBtn.href = '/';
       }
     } else {
       workBtn.href = '/';
       mobileworkBtn.href = '/';
-      achievedBtn.href = '/';
+      // achievedBtn.href = '/';
     }
   }
   
@@ -197,22 +197,22 @@ window.addEventListener('load', () => {
         createEle.classList.add('experience-clist-item');
         createEle.innerHTML = `<div class="experience-clist-item-wrapper">
           <a href="./project.html?num=${i}"} class='experience-clist-item-project'>
-            <img src='./image/project/projdoor/exper_0${i}.webp' alt="" class='polioImg'/>
-            <img src='./image/exper_bg0${(i % 4) + 1}.webp' alt="" class='polioBackImg'/>
+            <img src='./image/project/projdoor/exper_0${i}.webp' alt="홈페이지 썸네일" class='polioImg'/>
+            <img src='./image/exper_bg0${(i % 4) + 1}.webp' alt="배경화면" class='polioBackImg'/>
           </a>
         </div>
         <div class="experience-clist-item-titlebox">
           <div class="experience-clist-item-tag">
             <div class="experience-clist-item-tagList">
-              <img src='./image/taglogo_00.webp' alt="" />
+              <img src='./image/taglogo_00.webp' alt="HTML 아이콘" />
               <p class='experience-clist-item-tagTxt'>HTML</p>
             </div>
             <div class="experience-clist-item-tagList">
-              <img src='./image/taglogo_01.webp' alt="" />
+              <img src='./image/taglogo_01.webp' alt="CSS 아이콘" />
               <p class='experience-clist-item-tagTxt'>CSS</p>
             </div>
             <div class="experience-clist-item-tagList">
-              <img src='./image/taglogo_02.webp' alt="" />
+              <img src='./image/taglogo_02.webp' alt="JAVASCRIPT 아이콘" />
               <p class='experience-clist-item-tagTxt'>JavaScript</p>
             </div>
           </div>
@@ -385,7 +385,7 @@ window.addEventListener('load', () => {
       let createPro = document.createElement('div');
       createPro.classList.add('projectContents-bitem');
       createPro.innerHTML = `<div class="projectContents-bitemWrap">
-        <img src='./image/project/capture0${searchParams}_0${i}.webp' alt="" />
+        <img src='./image/project/capture0${searchParams}_0${i}.webp' alt="컨텐츠 이미지" />
       </div>`;
 
       projectContentsBody.appendChild(createPro);
@@ -395,7 +395,7 @@ window.addEventListener('load', () => {
       let experienceListitemtag = document.querySelector('.experience-clist-item-tag');
       let createbadge = document.createElement('div');
       createbadge.classList.add('experience-clist-item-tagList');
-      createbadge.innerHTML = `<img src="./image/taglogo_03.webp" alt="">
+      createbadge.innerHTML = `<img src="./image/taglogo_03.webp" alt="Icon 이미지">
       <p class="experience-clist-item-tagTxt">React</p>`;
 
       experienceListitemtag.appendChild(createbadge);
